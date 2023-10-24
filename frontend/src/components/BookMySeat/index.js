@@ -31,7 +31,7 @@ class BookMySeat extends Component {
   //Fetch data from API
   getSeatsData = async () => {
     this.setState({ apiStatus: apiStatusConstants.inProgress });
-    const api = "http://localhost:3004/seats/";
+    const api = "https://bookmyseat-server.onrender.com/seats/";
     const response = await fetch(api);
     if (response.ok) {
       const data = await response.json();
@@ -66,7 +66,7 @@ class BookMySeat extends Component {
         "Make sure do you want to clear all the previous bookings?"
       )
     ) {
-      const api = "http://localhost:3004/clearseat/";
+      const api = "https://bookmyseat-server.onrender.com/clearseat/";
       const response = await fetch(api, { method: "PUT" });
       if (response.ok) {
         this.getSeatsData();

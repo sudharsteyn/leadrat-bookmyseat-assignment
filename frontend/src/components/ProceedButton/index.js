@@ -24,7 +24,7 @@ const ProceedButton = (props) => {
     const seats = {
       selectedSeats,
     };
-    const api = "http://localhost:3004/bookseat/";
+    const api = "https://bookmyseat-server.onrender.com/bookseat/";
     const options = {
       method: "POST",
       headers: {
