@@ -1,0 +1,15 @@
+li {
+  margin: 4px;
+}
+
+.seat {
+  color: gray;
+}
+
+.seat:hover {
+  color: rgb(15, 185, 15);
+}
+
+.seat-selected {
+  color: rgb(15, 185, 15);
+}

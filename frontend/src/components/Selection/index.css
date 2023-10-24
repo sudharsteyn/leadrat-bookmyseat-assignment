@@ -1,0 +1,18 @@
+select {
+  border-radius: 8px;
+  background-color: #f84464;
+  border: none;
+  color: #fff;
+  text-align: center;
+  outline: none;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  padding: 8px;
+  font-family: Roboto;
+  font-size: 16px;
+}
+
+select option:checked {
+  font-weight: bold;
+  color: #1b1c1c;
+}
